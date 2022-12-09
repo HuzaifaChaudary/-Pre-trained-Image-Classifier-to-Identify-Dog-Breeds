@@ -1,0 +1,44 @@
+
+Filename= Beagle_01141.jpg 
+pet_image Label= beagle 
+Classifier Label= walker hound, walker foxhound 
+match= 0 
+Image is dog= 1 
+Classifier is dog= 1
+*Is-a-Dog Match*
+
+Filename= Beagle_01125.jpg 
+pet_image Label= beagle 
+Classifier Label= beagle 
+match= 1 
+Image is dog= 1 
+Classifier is dog= 1
+*Breed Match*
+*Is-a-Dog Match*
+
+Filename= skunk_029.jpg 
+pet_image Label= skunk 
+Classifier Label= skunk, polecat, wood pussy 
+match= 1 
+Image is dog= 0 
+Classifier is dog= 0
+*NOT-a-Dog Match*
+Command Line Arguments:
+     dir = pet_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 27 key-value pairs.
+Below are 10 of them:
+ 1 key:            run_models_batch.sh  label:                           
+ 2 key:             vgg_pet-images.txt  label:                           
+ 3 key:                   dognames.txt  label:                           
+ 4 key:         alexnet_pet-images.txt  label:                           
+ 5 key:                     pet_images  label:                           
+ 6 key:             classify_images.py  label:                           
+ 7 key:             test_classifier.py  label:                           
+ 8 key:   run_models_batch_uploaded.sh  label:                           
+ 9 key:       classify_images_hints.py  label:                           
+10 key:        get_input_args_hints.py  label:                           
+* Doesn't Check the Results Dictionary because 'classify_images' hasn't been defined.
+* Doesn't Check the Results Dictionary because 'adjust_results4_isadog' hasn't been defined.
